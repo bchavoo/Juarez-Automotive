@@ -6,13 +6,13 @@ public class Invoice {
 	
 	private String invoiceNumber;
 	private String invoiceDate;
-	private ArrayList<Products> invoiceProducts;
+	private ArrayList<Product> invoiceProducts;
 	private double subTotal;
 	private double tax;
 	private double total;
 	private double payment;
 
-	public Invoice(String invoiceNumber, String invoiceDate, ArrayList<Products> invoiceProducts, double subTotal,
+	public Invoice(String invoiceNumber, String invoiceDate, ArrayList<Product> invoiceProducts, double subTotal,
 			double tax, double total, double payment) {
 		super();
 		this.invoiceNumber = invoiceNumber;
@@ -40,11 +40,11 @@ public class Invoice {
 		this.invoiceDate = invoiceDate;
 	}
 
-	public ArrayList<Products> getInvoiceProducts() {
+	public ArrayList<Product> getInvoiceProducts() {
 		return invoiceProducts;
 	}
 
-	public void setInvoiceProducts(ArrayList<Products> invoiceProducts) {
+	public void setInvoiceProducts(ArrayList<Product> invoiceProducts) {
 		this.invoiceProducts = invoiceProducts;
 	}
 

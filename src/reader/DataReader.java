@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import entities.Invoice;
-import entities.Products;
+import entities.Product;
 
 public class DataReader {
 
-	public static List<Products> getProductList() {
-		List<Products> productList = new ArrayList<Products>();
+	public static List<Product> getProductList() {
+		List<Product> productList = new ArrayList<Product>();
 		//Read products from somewhere and store it into productList
 		
 		

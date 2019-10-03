@@ -1,11 +1,11 @@
 package entities;
 
-public class Products {
+public class Product {
 	private String productName;
 	private int quantity;
 	private double cost;	
 
-	public Products(String productName, int quantity, double cost) {
+	public Product(String productName, int quantity, double cost) {
 		super();
 		this.productName = productName;
 		this.quantity = quantity;
