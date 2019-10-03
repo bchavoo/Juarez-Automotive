@@ -10,9 +10,10 @@ public class Invoice {
 	private double subTotal;
 	private double tax;
 	private double total;
-	
+	private double payment;
+
 	public Invoice(String invoiceNumber, String invoiceDate, ArrayList<Products> invoiceProducts, double subTotal,
-			double tax, double total) {
+			double tax, double total, double payment) {
 		super();
 		this.invoiceNumber = invoiceNumber;
 		this.invoiceDate = invoiceDate;
@@ -20,6 +21,7 @@ public class Invoice {
 		this.subTotal = subTotal;
 		this.tax = tax;
 		this.total = total;
+		this.setPayment(payment);
 	}
 
 	public String getInvoiceNumber() {
@@ -68,5 +70,13 @@ public class Invoice {
 
 	public void setTotal(double total) {
 		this.total = total;
+	}
+
+	public double getPayment() {
+		return payment;
+	}
+
+	public void setPayment(double payment) {
+		this.payment = payment;
 	}
 }
