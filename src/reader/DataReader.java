@@ -11,23 +11,14 @@ import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 import entities.Address;
-import entities.General;
-import entities.Invoice;
-import entities.InvoiceProducts;
-import entities.Member;
 import entities.Person;
-import entities.Student;
-import product.DayMembership;
-import product.RentalEquipment;
-import product.ParkingPass;
-import product.Product;
-import product.YearMembership;
+
 
 public class DataReader {
 
 	//These are the lists we will store the CSV information in
 	public static Person personInformation = new Person;
-	public static List<Service> serviceList = new ArrayList<Service>();
+	public static List<Product> productList = new ArrayList<Product>();
 	public static int numberOfProducts = 0;
 
 	//Process the CSV file
